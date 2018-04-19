@@ -22,6 +22,8 @@ module.exports = [
   "bower_components/angular-toastr/dist/angular-toastr.js",
   "bower_components/angular-toastr/dist/angular-toastr.tpls.js",
   "bower_components/angular-promise-buttons/dist/angular-promise-buttons.js",
+  "bower_components/swiper/dist/js/swiper.js",
+  "bower_components/swiper/dist/js/swiper.min.js",
 
   //App.js
   'frontend/js/app.js',
@@ -45,6 +47,7 @@ module.exports = [
 
   // Contorllers
   'frontend/js/controllers/controller.js',
+  'frontend/views/content/home/home.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/language-controller.js',
 ];

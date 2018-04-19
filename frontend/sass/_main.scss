@@ -137,6 +137,8 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
 @import "other/font-fix";
 body {
     padding-top: 70px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 img.loading {
@@ -177,6 +179,36 @@ footer {
     p {
         margin: 0;
     }
+}
+
+//fonts
+h1 {
+    font-size: 3rem; //48px
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2rem; // 32px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.625rem; // 26px
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 1.25rem; //20px;
+}
+
+h5 {
+    font-size: 1.125rem; //18px;
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 1rem; // 16px;
+    font-weight: bold;
 }
 
 //bootstrap forms
@@ -263,3 +295,151 @@ header {
     width: 100%;
     height: 100%;
 }
+
+//swiper
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*===================================
+=            Team Member            =
+===================================*/
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-member .team-bubble-one,
+.team-member .team-bubble-two {
+    display: none;
+}
+
+.team-member .team-social-icons .social-links li {
+    display: inline-block;
+}
+
+.team-member .team-social-icons .social-links li a {
+    display: block;
+    padding: 0 10px;
+}
+
+.team-member .team-social-icons .social-links li a::before {
+    font-family: FontAwesome;
+}
+
+.team-member .team-social-icons .social-links li a[href*="facebook.com"]::before {
+    content: "\f09a";
+}
+
+.team-member .team-social-icons .social-links li a[href*="instagram.com"]::before {
+    content: "\f16d";
+}
+
+.team-member .team-social-icons .social-links li a[href*="twitter.com"]::before {
+    content: "\f099";
+}
+
+.team-member .team-social-icons .social-links li a[href*="linkedin.com"]::before {
+    content: "\f0e1";
+}
+
+.team-member .team-social-icons .social-links li a[href*="plus.google.com"]::before {
+    content: "\f0d5";
+}
+
+.team-member .team-member-thumbnail img {
+    max-width: 100%;
+}
+
+.team-member.team-bubble {
+    text-align: center;
+    cursor: pointer;
+    padding-top: 38px;
+    margin-bottom: 30px;
+}
+
+.team-member.team-bubble .team-member-thumbnail {
+    position: relative;
+    height: 220px;
+    margin: 0 0 15px;
+}
+
+.team-member.team-bubble .team-member-thumbnail .team-member-thumbnail-inner {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    top: 50px;
+}
+
+.team-member.team-bubble .team-member-thumbnail .team-social-icons {
+    display: none;
+}
+
+.team-member.team-bubble .team-member-thumbnail .team-member-thumbnail-inner,
+.team-member.team-bubble .team-member-thumbnail .team-bubble-one,
+.team-member.team-bubble .team-member-thumbnail .team-bubble-two {
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    transition: all 0.2s linear;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.team-member.team-bubble .team-member-thumbnail .team-bubble-one {
+    background: #E4EDF7;
+    width: 220px;
+    height: 220px;
+    top: 0;
+}
+
+.team-member.team-bubble .team-member-thumbnail .team-bubble-two {
+    background: #D1E3F6;
+    width: 170px;
+    height: 170px;
+    top: 25px;
+}
+
+.team-member.team-bubble .team-member-description .team-member-title {
+    font-size: 16px;
+    color: #67666A;
+    margin: 0 0 10px;
+}
+
+.team-member.team-bubble .team-member-description .team-member-position {
+    font-size: 12px;
+    color: #807F83;
+}
+
+.team-member.team-bubble .team-member-description .social-links {
+    padding: 0;
+    margin: 9px 0 0;
+}
+
+.team-member.team-bubble:hover .team-bubble-one,
+.team-member.team-bubble:hover .team-bubble-two {
+    transform: scale(1.1);
+}
+
+/*=====  End of Team Member  ======*/

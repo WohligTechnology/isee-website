@@ -23,11 +23,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'HomeCtrl'
         })
-        .state('links', {
-            url: "/links",
-            templateUrl: tempateURL,
-            controller: 'LinksCtrl'
-        });
+    // .state('links', {
+    //     url: "/links",
+    //     templateUrl: tempateURL,
+    //     controller: 'LinksCtrl'
+    // });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
 });
