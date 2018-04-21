@@ -1,206 +1,341 @@
 <!-- //home slider section -->
-<section>
+<section id="home-slider">
     <div class="home-swiper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-                <div class="swiper-slide">Slide 10</div>
+                <div class="swiper-slide" style="background-image:url({{s}})" ng-repeat="s in homeSlide track by $index">
+                    <div class="slider-content-inner text-left w-100 px-5 mx-3 white-color">
+                        <h1 class="slider-title">Perfect for Agency</h1>
+
+                        <p class="slider-description">We are passionate about design.</p>
+
+                        <a class="btn btn-default btn-rounded btn-medium btn-primary" href="#"> Read More </a>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </section>
 <!-- //home slider section -->
+
 <!-- //home unknown section -->
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="icon-box-icon" style="color:#ffffff;font-size:32px;background-color:#dd9ebd;">
-                    <div class="icon-box-icon-container">
-                        <div class="icon-box-inner-icon">
-                            <i class="fa fa-code"></i>
+<section id="unknow-section">
+    <div class="py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="icon-box icon-box-center icon-box-hexagon">
+                        <div class="icon-box-icon">
+                            <div class="icon-box-icon-container">
+                                <div class="icon-box-inner-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="text-center">
-                    <h5>CLEAN CODE</h5>
-                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                        to using 'Content here, content here', making it look like readable English.</p>
-                    <a role="button">Read More</a>
-                </div>
+                    <div class="text-center">
+                        <h5 class="py-3 m-0 Poppins-Regular text-uppercase">Analytics</h5>
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.</p>
+                        <a role="button" class="text-uppercase border-bottom border-dark">Read More</a>
+                    </div>
 
-            </div>
-            <div class="col">
-                <div class="icon-box-icon" style="color:#ffffff;font-size:32px;background-color:#dd9ebd;">
-                    <div class="icon-box-icon-container">
-                        <div class="icon-box-inner-icon">
-                            <i class="fa fa-code"></i>
+                </div>
+                <div class="col">
+                    <div class="icon-box icon-box-center icon-box-hexagon">
+                        <div class="icon-box-icon">
+                            <div class="icon-box-icon-container">
+                                <div class="icon-box-inner-icon">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="text-center">
-                    <h5>AWESOME SUPPORT</h5>
-                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                        to using 'Content here, content here', making it look like readable English.</p>
-                    <a role="button">Read More</a>
-                </div>
+                    <div class="text-center">
+                        <h5 class="py-3 m-0 Poppins-Regular text-uppercase">dashboard</h5>
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.</p>
+                        <a role="button" class="text-uppercase border-bottom border-dark">Read More</a>
+                    </div>
 
-            </div>
-            <div class="col">
-                <div class="icon-box-icon" style="color:#ffffff;font-size:32px;background-color:#dd9ebd;">
-                    <div class="icon-box-icon-container">
-                        <div class="icon-box-inner-icon">
-                            <i class="fa fa-code"></i>
+                </div>
+                <div class="col">
+                    <div class="icon-box icon-box-center icon-box-hexagon">
+                        <div class="icon-box-icon">
+                            <div class="icon-box-icon-container">
+                                <div class="icon-box-inner-icon">
+                                    <i class="far fa-paper-plane"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="text-center">
-                    <h5>SETTING GOAL</h5>
-                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                        to using 'Content here, content here', making it look like readable English.</p>
-                    <a role="button">Read More</a>
-                </div>
+                    <div class="text-center">
+                        <h5 class="py-3 m-0 Poppins-Regular text-uppercase">Rules Engine</h5>
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.</p>
+                        <a role="button" class="text-uppercase border-bottom border-dark">Read More</a>
+                    </div>
 
-            </div>
-            <div class="col">
-                <div class="icon-box-icon" style="color:#ffffff;font-size:32px;background-color:#dd9ebd;">
-                    <div class="icon-box-icon-container">
-                        <div class="icon-box-inner-icon">
-                            <i class="fa fa-code"></i>
+                </div>
+                <div class="col">
+                    <div class="icon-box icon-box-center icon-box-hexagon">
+                        <div class="icon-box-icon">
+                            <div class="icon-box-icon-container">
+                                <div class="icon-box-inner-icon">
+                                    <i class="far fa-life-ring"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="text-center">
-                    <h5>BEAUTIFULLY DESIGNED</h5>
-                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                        to using 'Content here, content here', making it look like readable English.</p>
-                    <a role="button">Read More</a>
+                    <div class="text-center">
+                        <h5 class="py-3 m-0 Poppins-Regular text-uppercase">CASE Management</h5>
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                            to using 'Content here, content here', making it look like readable English.</p>
+                        <a role="button" class="text-uppercase border-bottom border-dark">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </section>
 <!-- //home unknown section -->
-<!-- //home Team section -->
-<section>
-    <div class="container">
-        <div class="team-section">
+<!-- //home About Us section -->
+<section id="about-us">
+    <div class="py-5 mt-5 alternate-bg">
+        <div class="container">
             <div class="text-center">
-                <h3 class="title-title">OUR TEAM</h3>
-                <p class="sub-title">Meet the awesome people behind our wall</p>
+                <h3 class="title-title pb-3">ABOUT US </h3>
+                <!-- <p class="sub-title">Meet the awesome people behind our wall</p> -->
             </div>
             <div class="row">
-                <div class="col-sm col-md col-lg">
-                    <div class="team-member team-bubble">
-                        <div class="team-member-inner">
-                            <figure class="team-member-thumbnail">
-                                <span class="team-bubble-one"></span>
-                                <span class="team-bubble-two"></span>
-                                <div class="team-member-thumbnail-inner">
-                                    <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/dexter-collier.jpg" alt="Dexter Collier">
-                                </div>
-                            </figure>
-                            <div class="team-member-description">
-                                <h5 class="team-member-title">Dexter Collier</h5>
-                                <span class="team-member-position">Web Developer</span>
-                                <div class="team-social-icons">
-                                    <ul class="social-links">
-                                        <li>
-                                            <a href="https://facebook.com/"></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/"></a>
-                                        </li>
-                                    </ul>
+                <div class="col-sm-4">
+                    <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/design-572x545.jpg" class="img-fluid"
+                        alt="Dexter Collier">
+                </div>
+                <div class="col-sm-8 d-flex align-items-center">
+                    <p>The iSee solution framework works with your existing IT and POS environment and enables you to analyze,
+                        predict and take preventive action to track and reduce frauds. Deploy at scale for on-premises, cloud
+                        or hybrid environments in weeks Out of the box rules & reports The iSee solution is easy to implement
+                        and will have a demonstrable return on your investment. Machine & Natural Language query and ad hoc
+                        report tool allows users to design complex scenarios.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- //home About Us section -->
+<!-- //home Why Isee section -->
+<section id="why-isee">
+    <div class="py-5 mt-5">
+        <div class="container">
+            <div class="title title-default text-center">
+                <h3 class="title-title pt-3">WHY ISEE</h3>
+                <!-- <p class="sub-title">See what they are saying about us</p> -->
+            </div>
+            <div class="team-member team-bubble">
+                <div class="team-member-inner">
+                    <figure class="">
+                        <div class="text-center">
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/design-572x545.jpg" alt="Dexter Collier"
+                                class="img-fluid" width="200" height="200">
+                        </div>
+                    </figure>
+                    <div class="px-5 mx-5">
+                        <p>
+                            An Intelligence Driven Return Fraud Prevent ion strategy can deliver efficiencies and savings by prioritizing the most pressing
+                            risks, merging data sets and tools and minimizing standalone product implementations
+                        </p>
+                        <p>The iSeeTM solution framework is designed to work with any existing IT and POS environment and enables
+                            organizations to analyze, predict and take preventive action to track and reduce retail frauds.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- //home Why Isee section -->
+
+<!-- //home Latest News section -->
+<section id="latest-news">
+    <div class="py-5 mt-5 alternate-bg">
+        <div class="container">
+            <div class="latest-news">
+                <div class="title title-default text-center">
+                    <h3 class="title-title pb-3">FEATURES OF ISEE</h3>
+                    <!-- <p class="sub-title">Right from our blog</p> -->
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <figure class="entry-thumbnail">
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid"> </figure>
+                        <h4 class="entry-title py-2 m-0 text-capitalize">iSee Advantage</h4>
+                        <!-- <p class="py-2">by TG-Demo Team </p> -->
+                        <p>Combines expert driven rules based engine capable of detecting potential frauds and preventing before
+                            it happens Predefined, parameterized and configurable rules engine for best practices and on
+                            demand rollout Behaviors based profiling and predictive analytics to suggest right controls through
+                            rules for better fraud detection coverage Machine learning ensures that the rules engines keep
+                            channel transactions for a holistic view of the customer to identify high risk customers for
+                            fraudulent returns Dynamic, real time and self-learning capabilities Unmatched anomaly detection
+                            and monitoring capabilities
+                        </p>
+                        <a role="button">Read More</a>
+                    </div>
+                    <div class="col">
+                        <figure class="entry-thumbnail">
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid"> </figure>
+                        <h4 class="entry-title py-2 m-0 text-capitalize">iSee Dashboard</h4>
+                        <!-- <p class="py-2">by TG-Demo Team </p> -->
+                        <p>Pre-built dashboards to help identify the anomalies of returns, Value added analysis of key indicators
+                            through dashboard Predefined and customizable Key Risk / Fraud Indicators (KRIs) Capability to
+                            do scenario simulation and report observation Flexible Dashboards –create your own portal based
+                            dashboards to view what is important for you to find relationships and gain context. Capability
+                            to handle both unstructured and structure for analytics engine outcome Capability to support
+                            further investigation through drill down and other data reference</p>
+                        <a role="button">Read More</a>
+                    </div>
+                    <div class="col">
+                        <figure class="entry-thumbnail">
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid"> </figure>
+                        <h4 class="entry-title py-2 m-0 text-capitalize">Key Offerings</h4>
+                        <!-- <p class="py-2">by TG-Demo Team </p> -->
+                        <p>Access on any Device –Desktops / Smartphones / Tablets Enables non-technical / business users to
+                            test, change and deploy new rules to match existing and emerging fraud trends Product modelled
+                            such that it supports distinctive business implementation rapidly without any product customization
+                            Integration option to organization’s internal systems supported Feature richness enables organizations
+                            to fit their specific needs infrastructure within a network or in the cloud Quick and easy integration
+                            with existing POS systems</p>
+                        <a role="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- //home Latest News section -->
+<!-- //home Team section -->
+<section id="our-team">
+    <div class="py-5 mt-5">
+        <div class="container">
+            <div class="team-section">
+                <div class="text-center">
+                    <h3 class="title-title ">OUR TEAM</h3>
+                    <p class="sub-title">Meet the awesome people behind our wall</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm col-md col-lg">
+                        <div class="team-member team-bubble">
+                            <div class="team-member-inner">
+                                <figure class="team-member-thumbnail">
+                                    <span class="team-bubble-one"></span>
+                                    <span class="team-bubble-two"></span>
+                                    <div class="team-member-thumbnail-inner">
+                                        <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/dexter-collier.jpg" alt="Dexter Collier">
+                                    </div>
+                                </figure>
+                                <div class="team-member-description">
+                                    <h5 class="team-member-title">Dexter Collier</h5>
+                                    <span class="team-member-position">Web Developer</span>
+                                    <div class="team-social-icons">
+                                        <ul class="social-links">
+                                            <li>
+                                                <i class="fab fa-facebook-f"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fab fa-twitter"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm col-md col-lg">
-                    <div class="team-member team-bubble">
-                        <div class="team-member-inner">
-                            <figure class="team-member-thumbnail">
-                                <span class="team-bubble-one"></span>
-                                <span class="team-bubble-two"></span>
-                                <div class="team-member-thumbnail-inner">
-                                    <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/dexter-collier.jpg" alt="Dexter Collier">
-                                </div>
-                            </figure>
-                            <div class="team-member-description">
-                                <h5 class="team-member-title">Dexter Collier</h5>
-                                <span class="team-member-position">Web Developer</span>
-                                <div class="team-social-icons">
-                                    <ul class="social-links">
-                                        <li>
-                                            <a href="https://facebook.com/"></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm col-md col-lg">
-                    <div class="team-member team-bubble">
-                        <div class="team-member-inner">
-                            <figure class="team-member-thumbnail">
-                                <span class="team-bubble-one"></span>
-                                <span class="team-bubble-two"></span>
-                                <div class="team-member-thumbnail-inner">
-                                    <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/dexter-collier.jpg" alt="Dexter Collier">
-                                </div>
-                            </figure>
-                            <div class="team-member-description">
-                                <h5 class="team-member-title">Dexter Collier</h5>
-                                <span class="team-member-position">Web Developer</span>
-                                <div class="team-social-icons">
-                                    <ul class="social-links">
-                                        <li>
-                                            <a href="https://facebook.com/"></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/"></a>
-                                        </li>
-                                    </ul>
+                    <div class="col-sm col-md col-lg">
+                        <div class="team-member team-bubble">
+                            <div class="team-member-inner">
+                                <figure class="team-member-thumbnail">
+                                    <span class="team-bubble-one"></span>
+                                    <span class="team-bubble-two"></span>
+                                    <div class="team-member-thumbnail-inner">
+                                        <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/dexter-collier.jpg" alt="Dexter Collier">
+                                    </div>
+                                </figure>
+                                <div class="team-member-description">
+                                    <h5 class="team-member-title">Dexter Collier</h5>
+                                    <span class="team-member-position">Web Developer</span>
+                                    <div class="team-social-icons">
+                                        <ul class="social-links">
+                                            <li>
+                                                <i class="fab fa-facebook-f"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fab fa-twitter"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm col-md col-lg">
-                    <div class="team-member team-bubble">
-                        <div class="team-member-inner">
-                            <figure class="team-member-thumbnail">
-                                <span class="team-bubble-one"></span>
-                                <span class="team-bubble-two"></span>
-                                <div class="team-member-thumbnail-inner">
-                                    <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/dexter-collier.jpg" alt="Dexter Collier">
+                    <div class="col-sm col-md col-lg">
+                        <div class="team-member team-bubble">
+                            <div class="team-member-inner">
+                                <figure class="team-member-thumbnail">
+                                    <span class="team-bubble-one"></span>
+                                    <span class="team-bubble-two"></span>
+                                    <div class="team-member-thumbnail-inner">
+                                        <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/dexter-collier.jpg" alt="Dexter Collier">
+                                    </div>
+                                </figure>
+                                <div class="team-member-description">
+                                    <h5 class="team-member-title">Dexter Collier</h5>
+                                    <span class="team-member-position">Web Developer</span>
+                                    <div class="team-social-icons">
+                                        <ul class="social-links">
+                                            <li>
+                                                <i class="fab fa-facebook-f"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fab fa-twitter"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </figure>
-                            <div class="team-member-description">
-                                <h5 class="team-member-title">Dexter Collier</h5>
-                                <span class="team-member-position">Web Developer</span>
-                                <div class="team-social-icons">
-                                    <ul class="social-links">
-                                        <li>
-                                            <a href="https://facebook.com/"></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://twitter.com/"></a>
-                                        </li>
-                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm col-md col-lg">
+                        <div class="team-member team-bubble">
+                            <div class="team-member-inner">
+                                <figure class="team-member-thumbnail">
+                                    <span class="team-bubble-one"></span>
+                                    <span class="team-bubble-two"></span>
+                                    <div class="team-member-thumbnail-inner">
+                                        <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/dexter-collier.jpg" alt="Dexter Collier">
+                                    </div>
+                                </figure>
+                                <div class="team-member-description">
+                                    <h5 class="team-member-title">Dexter Collier</h5>
+                                    <span class="team-member-position">Web Developer</span>
+                                    <div class="team-social-icons">
+                                        <ul class="social-links">
+                                            <li>
+                                                <i class="fab fa-facebook-f"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fab fa-twitter"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -209,54 +344,118 @@
             </div>
         </div>
     </div>
+
 
 </section>
 <!-- //home Team section -->
-<!-- //home Latest News section -->
-<section>
-    <div class="container">
-        <div class="latest-news">
-            <div class="title title-default text-center">
-                <h3 class="title-title">LATEST NEWS</h3>
-                <p class="sub-title">Right from our blog</p>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <figure class="entry-thumbnail">
-                        <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid"> </figure>
-                    <h3 class="entry-title">What it takes to bake a cake</h3>
-                    <span>by TG-Demo Team </span>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                        in some form, by injected humour, or randomised words which don't look even slightly believable.
-                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
-                        hidden in the middle of text.</p>
-                    <a role="button">Read More</a>
+<!-- //home contact us section -->
+<section id="contact us">
+    <div class="contact-sec alternate-bg">
+        <div class="py-5 mt-5">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="title-title pb-3">CONTACT US </h3>
+                    <!-- <p class="sub-title">Meet the awesome people behind our wall</p> -->
                 </div>
-                <div class="col">
-                    <figure class="entry-thumbnail">
-                        <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid"> </figure>
-                    <h3 class="entry-title">What it takes to bake a cake</h3>
-                    <span>by TG-Demo Team </span>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                        in some form, by injected humour, or randomised words which don't look even slightly believable.
-                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
-                        hidden in the middle of text.</p>
-                    <a role="button">Read More</a>
-                </div>
-                <div class="col">
-                    <figure class="entry-thumbnail">
-                        <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid"> </figure>
-                    <h3 class="entry-title">What it takes to bake a cake</h1>
-                        <span>by TG-Demo Team </span>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                            in some form, by injected humour, or randomised words which don't look even slightly believable.
-                            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
-                            hidden in the middle of text.</p>
-                        <a role="button">Read More</a>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contact us">
+                            <div class="textwidget">
+                                <p>This contact form is created using
+                                    <a href="https://wpeverest.com/wordpress-plugins/everest-forms/" target="_blank" rel="noopener">Everest Forms</a>. To download this contact form plugin click
+                                    <a href="https://downloads.wordpress.org/plugin/everest-forms.zip" rel="nofollow">here</a>.
+                                </p>
+
+                                <div class="conatct-forms">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name">Name
+                                                <span>*</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email
+                                                <span>*</span>
+                                            </label>
+                                            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Email Address">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Message">Message
+                                                <span>*</span>
+                                            </label>
+                                            <textarea class="form-control" id="Message" rows="3"></textarea>
+                                        </div>
+                                        <div class="contact-submit text-right">
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 px-5">
+                        <div class="icon-box icon-box-small py-3">
+                            <div class="icon-box-icon">
+                                <div class="icon-box-icon-container">
+                                    <div class="icon-box-inner-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box-description">
+                                <h5 class="icon-box-title">Address</h5>
+                                <p class="icon-box-content">Frontida Inc. Atlanta, GA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="icon-box icon-box-small py-3">
+                            <div class="icon-box-icon">
+                                <div class="icon-box-icon-container">
+                                    <div class="icon-box-inner-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box-description">
+                                <h5 class="icon-box-title">Phone</h5>
+                                <p class="icon-box-content">404 822 8006</p>
+                            </div>
+                        </div>
+                        <!-- <div class="icon-box icon-box-small py-3">
+                            <div class="icon-box-icon">
+                                <div class="icon-box-icon-container">
+                                    <div class="icon-box-inner-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box-description">
+                                <h5 class="icon-box-title">Web</h5>
+                                <p class="icon-box-content">
+                                    www.frontidainc.com
+                                </p>
+                            </div>
+                        </div> -->
+                        <div class="icon-box icon-box-small py-3">
+                            <div class="icon-box-icon">
+                                <div class="icon-box-icon-container">
+                                    <div class="icon-box-inner-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-box-description">
+                                <h5 class="icon-box-title">Email</h5>
+                                <p class="icon-box-content">
+                                    <a mailto="ichowdhury@frontidainc.com"></a>ichowdhury@frontidainc.com</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
+
 </section>
-<!-- //home Latest News section -->
+<!-- //home contact us section -->

@@ -14,22 +14,22 @@ myApp.factory('NavigationService', function () {
     }, {
         name: "About Us",
         classis: "active",
-        anchor: "links",
+        anchor: "about-us",
         subnav: []
     }, {
         name: "Team",
         classis: "active",
-        anchor: "links",
+        anchor: "our-team",
         subnav: []
     }, {
         name: "Why Isee",
         classis: "active",
-        anchor: "links",
+        anchor: "why-isee",
         subnav: []
     }, {
         name: "Contact Us",
         classis: "active",
-        anchor: "links",
+        anchor: "contact us",
         subnav: []
     }];
 
