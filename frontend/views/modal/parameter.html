@@ -1,0 +1,17 @@
+<div class="parameter-modal position-relative">
+    <div class="close-modal" ng-click="$dismiss()">
+        <i class=" fa fa-times-circle " aria-hidden="true "></i>
+    </div>
+    <div class="parameter p-4">
+        <p>
+            {{text.text}}
+        </p>
+        <div ng-if="text.list">
+            <ul>
+                <li ng-repeat="l in text.list track by $index">{{l}}
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>

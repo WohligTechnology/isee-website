@@ -19,6 +19,13 @@ myApp.service('TemplateService', function () {
         data.content = "views/" + page;
         return data;
     };
+    this.changeURL = function (id) {
+        console.log("yuyuiyu");
+        var id = "#" + id;
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 1000);
+    };
 
     this.init();
 

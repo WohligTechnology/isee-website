@@ -22,78 +22,23 @@
 
 <!-- //home unknown section -->
 <section id="unknow-section">
-    <div class="py-5 mt-5">
+    <div class="py-5 alternate-one">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col" ng-repeat="s in fourblock track by $index">
                     <div class="icon-box icon-box-center icon-box-hexagon">
                         <div class="icon-box-icon">
                             <div class="icon-box-icon-container">
                                 <div class="icon-box-inner-icon">
-                                    <i class="fab fa-facebook-f"></i>
+                                    <img src="{{s.img}}" class="img-fluid" width="40">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="text-center">
-                        <h5 class="py-3 m-0 Poppins-Regular text-uppercase">Analytics</h5>
-                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                            to using 'Content here, content here', making it look like readable English.</p>
-                        <a role="button" class="text-uppercase border-bottom border-dark">Read More</a>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="icon-box icon-box-center icon-box-hexagon">
-                        <div class="icon-box-icon">
-                            <div class="icon-box-icon-container">
-                                <div class="icon-box-inner-icon">
-                                    <i class="fab fa-apple"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <h5 class="py-3 m-0 Poppins-Regular text-uppercase">dashboard</h5>
-                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                            to using 'Content here, content here', making it look like readable English.</p>
-                        <a role="button" class="text-uppercase border-bottom border-dark">Read More</a>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="icon-box icon-box-center icon-box-hexagon">
-                        <div class="icon-box-icon">
-                            <div class="icon-box-icon-container">
-                                <div class="icon-box-inner-icon">
-                                    <i class="far fa-paper-plane"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <h5 class="py-3 m-0 Poppins-Regular text-uppercase">Rules Engine</h5>
-                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                            to using 'Content here, content here', making it look like readable English.</p>
-                        <a role="button" class="text-uppercase border-bottom border-dark">Read More</a>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="icon-box icon-box-center icon-box-hexagon">
-                        <div class="icon-box-icon">
-                            <div class="icon-box-icon-container">
-                                <div class="icon-box-inner-icon">
-                                    <i class="far fa-life-ring"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <h5 class="py-3 m-0 Poppins-Regular text-uppercase">CASE Management</h5>
-                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                            to using 'Content here, content here', making it look like readable English.</p>
-                        <a role="button" class="text-uppercase border-bottom border-dark">Read More</a>
+                        <h5 class="py-3 m-0 Poppins-Regular text-uppercase">{{s.title}}</h5>
+                        <p>{{s.text}}</p>
+                        <a role="button" class="text-uppercase border-bottom border-dark" ng-click="modalOpen($index)">Read More</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +49,7 @@
 <!-- //home unknown section -->
 <!-- //home About Us section -->
 <section id="about-us">
-    <div class="py-5 mt-5 alternate-bg">
+    <div class="py-5 alternate-bg">
         <div class="container">
             <div class="text-center">
                 <h3 class="title-title pb-3">ABOUT US </h3>
@@ -131,31 +76,30 @@
 <!-- //home About Us section -->
 <!-- //home Why Isee section -->
 <section id="why-isee">
-    <div class="py-5 mt-5">
+    <div class="py-5 alternate-one">
         <div class="container">
             <div class="title title-default text-center">
-                <h3 class="title-title pt-3">WHY ISEE</h3>
-                <!-- <p class="sub-title">See what they are saying about us</p> -->
-            </div>
-            <div class="team-member team-bubble">
-                <div class="team-member-inner">
-                    <figure class="">
-                        <div class="text-center">
-                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/design-572x545.jpg" alt="Dexter Collier"
-                                class="img-fluid" width="200" height="200">
-                        </div>
-                    </figure>
-                    <div class="px-5 mx-5">
-                        <p>
-                            An Intelligence Driven Return Fraud Prevent ion strategy can deliver efficiencies and savings by prioritizing the most pressing
-                            risks, merging data sets and tools and minimizing standalone product implementations
-                        </p>
-                        <p>The iSeeTM solution framework is designed to work with any existing IT and POS environment and enables
-                            organizations to analyze, predict and take preventive action to track and reduce retail frauds.
-                        </p>
-                    </div>
+                <h3 class="title-title pt-3">iSEE SOLUTION</h3>
+                <div class="row pt-4">
 
+                    <div class="col d-flex">
+                        <div class="d-flex align-items-center why-isee-border">
+                            <p>
+                                An Intelligence Driven Return Fraud Prevent ion strategy can deliver efficiencies and savings by prioritizing the most pressing
+                                risks, merging data sets and tools and minimizing standalone product implementations
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure class="">
+                            <div class="text-center">
+                                <img src="img/home/isee1.png" alt="Dexter Collier" class="img-fluid">
+                            </div>
+                        </figure>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -164,12 +108,98 @@
 <!-- //home Why Isee section -->
 
 <!-- //home Latest News section -->
+<!-- //home three div section -->
+<section id="three div ">
+    <div class="py-5 alternate-bg">
+        <div class="container">
+            <uib-tabset active="activePill" vertical="true" type="pills">
+                <uib-tab index="0" heading="Analytical Dashboard">
+                    <div class="py-4 text-center bg-dashboard">
+                        <h3>Analytical Dashboard</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">
+                        </div>
+                        <div class="col pt-5">
+                            <ul>
+                                <li>Pre-built dashboards to help identify the anomalies of returns,</li>
+                                <li>Value added analysis of key indicators through dashboard.</li>
+                                <li>Predefined and customizable Key Risk / Fraud Indicators (KRIs).</li>
+                                <li>Capability to do scenario simulation and report observation.</li>
+                                <li>Flexible Dashboards –create your own portal based dashboards to view what is important for
+                                    you to find relationships and gain context.</li>
+                                <li>Capability to handle both unstructured and structure for analytics engine outcome.</li>
+                                <li>Capability to support further investigation through drill down and other data reference.</li>
+                                <li>Supports multi-dimensional analysis. </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </uib-tab>
+                <uib-tab index="1" heading="Rules Engine">
+                    <div class="bg-engine py-4 text-center">
+                        <h3>Rules Engine</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">
+                        </div>
+                        <div class="col pt-5">
+                            <p>Easy to configure out of the box rules & reports lets users leverage its adaptive functionality
+                                and design and build rules repository which can easily adapt to tackle new ORC scenarios
+                                and use cases. Machine & Natural Language query and real-time reporting tool allows users
+                                to design complex scenarios with ease.
+                            </p>
+                            <ul>
+                                <li>Visually configure rules using various parameters provided by the system</li>
+                                <li>Can configure complex rules</li>
+                                <li>Web and Mobile Enabled</li>
+                                <li>Designed for Scale (option for both On-Premise and Cloud)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </uib-tab>
+                <uib-tab index="2" heading="Case Management ">
+                    <div class="bg-Management py-4 text-center">
+                        <h3>Case Management</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">
+                        </div>
+                        <div class="col pt-5">
+                            <p>iSeeTM dashboard accentuates decision making by bringing clarity to complex business use cases
+                                BY PRESENTING ENHANCED DATA VISUALIZATIONS. Responsive Analytics layer allows for easy replication
+                                of real-time use cases
+                            </p>
+                            <ul>
+                                <li>Retail Analytics Dashboard</li>
+                                <li>Value added analysis for profitability , YoY analysis</li>
+                                <li>Web and Mobile Enabled</li>
+                                <li>multi-dimensional DATA analysis</li>
+                                <li>Machine learning for self-learning rules</li>
+                                <li>Handle both structured and un- structured data from various sources</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </uib-tab>
+            </uib-tabset>
+        </div>
+    </div>
+
+
+</section>
+<!-- //home three div section -->
 <section id="latest-news">
-    <div class="py-5 mt-5 alternate-bg">
+    <div class="py-5 alternate-one">
         <div class="container">
             <div class="latest-news">
                 <div class="title title-default text-center">
-                    <h3 class="title-title pb-3">FEATURES OF ISEE</h3>
+                    <h3 class="title-title pb-3">FEATURES OF iSEE</h3>
                     <!-- <p class="sub-title">Right from our blog</p> -->
                 </div>
                 <div class="row">
@@ -224,7 +254,7 @@
 <!-- //home Latest News section -->
 <!-- //home Team section -->
 <section id="our-team">
-    <div class="py-5 mt-5">
+    <div class="py-5 alternate-bg">
         <div class="container">
             <div class="team-section">
                 <div class="text-center">
@@ -350,8 +380,8 @@
 <!-- //home Team section -->
 <!-- //home contact us section -->
 <section id="contact us">
-    <div class="contact-sec alternate-bg">
-        <div class="py-5 mt-5">
+    <div class="contact-sec alternate-one">
+        <div class="py-5">
             <div class="container">
                 <div class="text-center">
                     <h3 class="title-title pb-3">CONTACT US </h3>

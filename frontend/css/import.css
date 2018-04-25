@@ -8648,6 +8648,18 @@ h6 {
 .OpenSans-SemiBold {
   font-family: OpenSans-SemiBold; }
 
+.bg-black {
+  background: #000; }
+
+.bg-dashboard {
+  background: #EEE8AA; }
+
+.bg-engine {
+  background: #000; }
+
+.bg-Management {
+  background: #000; }
+
 .input-lg,
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -8965,6 +8977,9 @@ header .navbar-light .navbar-nav .nav-link:focus {
   display: table-cell;
   vertical-align: middle; }
 
+.alternate-one {
+  background: rgba(186, 171, 147, 0.38); }
+
 .alternate-bg {
   background-color: #f7f7f7; }
 
@@ -8976,6 +8991,24 @@ header .navbar-light .navbar-nav .nav-link:focus {
 
 .contact-sec label {
   font-family: OpenSans-SemiBold; }
+
+.why-isee-border {
+  border: 2px solid;
+  border-radius: 50px; }
+
+.nav-pills {
+  padding-bottom: 1rem; }
+  .nav-pills li {
+    padding: 0.5rem 6.9rem; }
+
+.close-modal {
+  position: absolute;
+  top: 6px;
+  right: 11px;
+  cursor: pointer; }
+  .close-modal .fa {
+    font-size: 20px;
+    color: #ccc; }
 
 #fancybox-loading,
 .fancybox-close,

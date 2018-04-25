@@ -22,7 +22,7 @@ myApp.factory('NavigationService', function () {
         anchor: "our-team",
         subnav: []
     }, {
-        name: "Why Isee",
+        name: "Isee solution",
         classis: "active",
         anchor: "why-isee",
         subnav: []

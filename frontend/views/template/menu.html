@@ -1,7 +1,9 @@
 <ul class="nav navbar-nav">
   <li ng-repeat="menu in navigation" ui-sref-active="active" class="nav-item dropdown">
-    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor" class="nav-link">{{menu.name}}</a>
-    <a href="{{menu.link}}" ng-if="menu.link" class="nav-link">{{menu.name}}</a>
+    <!-- <a class="nav-link"> -->
+    <span class="nav-link" ng-click="changeURL(menu.anchor)" ng-if="menu.anchor">{{menu.name}}</span>
+    <!-- </a> -->
+    <a ng-if="menu.link" class="nav-link">{{menu.name}}</a>
     <div class="dropdown-menu" ng-if="menu.subnav!='';">
       <div ng-repeat="submenu in menu.subnav" ui-sref-active="active">
         <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor" class="dropdown-item">{{submenu.name}}</a>

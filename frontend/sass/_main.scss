@@ -268,6 +268,22 @@ h6 {
     font-family: OpenSans-SemiBold;
 }
 
+.bg-black {
+    background: #000;
+}
+
+.bg-dashboard {
+    background: #EEE8AA;
+}
+
+.bg-engine {
+    background: #000;
+}
+
+.bg-Management {
+    background: #000;
+}
+
 //bootstrap forms
 .input-lg,
 .input-group-lg>.form-control,
@@ -647,6 +663,10 @@ header {
 }
 
 //home page why isee
+.alternate-one {
+    background: rgba(186, 171, 147, 0.38);
+}
+
 .alternate-bg {
     background-color: #f7f7f7;
 }
@@ -662,5 +682,29 @@ header {
     }
     label {
         font-family: OpenSans-SemiBold;
+    }
+}
+
+.why-isee-border {
+    border: 2px solid;
+    border-radius: 50px;
+}
+
+.nav-pills {
+    padding-bottom: 1rem;
+    li {
+        padding: 0.5rem 6.9rem;
+    }
+}
+
+//scss for modal
+.close-modal {
+    position: absolute;
+    top: 6px;
+    right: 11px;
+    cursor: pointer;
+    .fa {
+        font-size: 20px;
+        color: #ccc;
     }
 }
