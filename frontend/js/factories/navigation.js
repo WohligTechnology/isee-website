@@ -29,7 +29,7 @@ myApp.factory('NavigationService', function () {
     }, {
         name: "Contact Us",
         classis: "active",
-        anchor: "contact us",
+        anchor: "contact-us",
         subnav: []
     }];
 

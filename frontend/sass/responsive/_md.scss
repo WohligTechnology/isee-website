@@ -1,3 +1,23 @@
 /* Breakpoint for medium viewport */
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .team-member.team-bubble .team-member-thumbnail .team-member-thumbnail-inner {
+        width: 100px;
+        height: 100px;
+        top: 60px;
+    }
+    .team-member.team-bubble .team-member-thumbnail .team-bubble-one {
+        width: 180px;
+        height: 180px;
+        top: 20px;
+        left: -15px;
+    }
+    .team-member.team-bubble .team-member-thumbnail .team-bubble-two {
+        width: 150px;
+        height: 150px;
+        top: 35px;
+    }
+    .nav-pills li {
+        padding: 0.5rem 2rem;
+    }
+}

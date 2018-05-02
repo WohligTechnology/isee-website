@@ -9053,5 +9053,47 @@ header .navbar-light .navbar-nav .nav-link:focus {
 /* Breakpoint for medium viewport */
 /* Breakpoint for medium viewport */
 /* Breakpoint for medium viewport */
+@media (max-width: 991.98px) {
+  .team-member.team-bubble .team-member-thumbnail .team-member-thumbnail-inner {
+    width: 100px;
+    height: 100px;
+    top: 60px; }
+  .team-member.team-bubble .team-member-thumbnail .team-bubble-one {
+    width: 180px;
+    height: 180px;
+    top: 20px;
+    left: -15px; }
+  .team-member.team-bubble .team-member-thumbnail .team-bubble-two {
+    width: 150px;
+    height: 150px;
+    top: 35px; }
+  .nav-pills li {
+    padding: 0.5rem 2rem; } }
+
 /* Breakpoint for medium viewport */
 /* Breakpoint for medium viewport */
+@media (max-width: 575.98px) {
+  footer p {
+    text-align: center; }
+  footer .float-right {
+    float: none !important; }
+  .why-isee-border p {
+    padding: 2rem; }
+  figure {
+    margin: 2rem 0px 1rem; }
+  .team-member.team-bubble .team-member-thumbnail .team-member-thumbnail-inner {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    top: 50px; }
+  .team-member.team-bubble .team-member-thumbnail .team-bubble-one {
+    background: #E4EDF7;
+    width: 220px;
+    height: 220px;
+    top: 0;
+    left: 0; }
+  .team-member.team-bubble .team-member-thumbnail .team-bubble-two {
+    background: #D1E3F6;
+    width: 170px;
+    height: 170px;
+    top: 25px; } }
