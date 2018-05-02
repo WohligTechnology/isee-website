@@ -162,7 +162,7 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
 }
 
 body {
-    padding-top: 70px;
+    padding-top: 60px;
     font-family: OpenSans-Regular;
     font-size: 14px;
 }
@@ -276,12 +276,16 @@ h6 {
     background: #EEE8AA;
 }
 
-.bg-engine {
-    background: #000;
-}
+// .bg-engine {
+//     background: #000;
+// }
 
-.bg-Management {
-    background: #000;
+// .bg-Management {
+//     background: #000;
+// }
+
+.background-gray{
+    background-color: $gray-lighter;
 }
 
 //bootstrap forms
@@ -661,6 +665,14 @@ header {
     display: table-cell;
     vertical-align: middle;
 }
+.alternate-content{
+p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical; 
+}
+}
 
 //home page why isee
 .alternate-one {
@@ -686,6 +698,7 @@ header {
 }
 
 .why-isee-border {
+    padding: 20px;
     border: 2px solid;
     border-radius: 50px;
 }
@@ -707,4 +720,7 @@ header {
         font-size: 20px;
         color: #ccc;
     }
+}
+.red-color{
+    color: red;
 }

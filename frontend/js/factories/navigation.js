@@ -11,17 +11,19 @@ myApp.factory('NavigationService', function () {
             // }
         ]
 
-    }, {
-        name: "About Us",
-        classis: "active",
-        anchor: "about-us",
-        subnav: []
-    }, {
-        name: "Team",
-        classis: "active",
-        anchor: "our-team",
-        subnav: []
-    }, {
+    }, 
+    // {
+    //     name: "About Us",
+    //     classis: "active",
+    //     anchor: "about-us",
+    //     subnav: []
+    // }, {
+    //     name: "Team",
+    //     classis: "active",
+    //     anchor: "our-team",
+    //     subnav: []
+    // }, 
+    {
         name: "Isee solution",
         classis: "active",
         anchor: "why-isee",
