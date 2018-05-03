@@ -11,11 +11,17 @@
     }
     .why-isee-border {
         p {
-            padding: 2rem;
+            padding: 0;
         }
+    }
+    .slider-content-inner{
+        padding: 0 !important;
     }
     figure {
         margin: 2rem 0px 1rem;
+    }
+    .home-swiper .slider-title{
+        font-size: 50px;
     }
     .team-member.team-bubble .team-member-thumbnail .team-member-thumbnail-inner {
         width: 120px;
