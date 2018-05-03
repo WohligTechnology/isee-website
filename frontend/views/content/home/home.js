@@ -65,7 +65,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     $scope.modalShow = function () {
         $uibModal.open({
             animation: true,
-            templateUrl: 'views/modal/knowMore.html',
+            templateUrl: 'views/modal/knowmore.html',
             scope: $scope,
             size: 'lg',
         });
