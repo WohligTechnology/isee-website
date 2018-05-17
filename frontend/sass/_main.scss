@@ -273,19 +273,21 @@ h6 {
 }
 
 .bg-dashboard {
-    background: #EEE8AA;
+    background: rgba(186, 171, 147, 0.38)
 }
 
 // .bg-engine {
 //     background: #000;
 // }
-
 // .bg-Management {
 //     background: #000;
 // }
-
-.background-gray{
+.background-gray {
     background-color: $gray-lighter;
+}
+
+.bg-overlay {
+    background-color: rgba(0, 0, 0, .7);
 }
 
 //bootstrap forms
@@ -393,9 +395,8 @@ header {
     display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -ms-flex-pack: center; // -webkit-justify-content: center;
+    // justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -553,30 +554,30 @@ header {
     font-family: Poppins-Regular;
 }
 
-.home-swiper {
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 100% !important;
-        height: 500px;
-    }
-    .slider .slider-content .slider-content-inner {
-        display: table-cell;
-        vertical-align: middle;
-    }
-    .slider-title {
-        font-size: 72px;
+.home-banner {
+    background-image: url("/img/home/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: 500px;
+    vertical-align: middle;
+    .banner-title {
+        font-size: 48px;
         font-weight: bold;
         color: white;
         margin: 0;
         text-shadow: 0 0 75px rgba(0, 0, 0, 0.1);
         font-family: Poppins-bold;
-    }
-    .slider .slider-content .slider-description {
+    } // .banner-content {
+    //     display: table-cell;
+    //     vertical-align: middle;
+    // }
+    .banner-content .banner-description {
         color: #E5E4E6;
         padding: 0;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 15px;
     }
 }
 
@@ -665,13 +666,14 @@ header {
     display: table-cell;
     vertical-align: middle;
 }
-.alternate-content{
-p{
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical; 
-}
+
+.alternate-content {
+    p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
 }
 
 //home page why isee
@@ -702,8 +704,8 @@ p{
 
 .nav-pills {
     padding-bottom: 1rem;
-    li {
-        padding: 0.5rem 6.9rem;
+    a {
+        padding: 0.5rem 7.99rem;
     }
 }
 
@@ -718,6 +720,30 @@ p{
         color: #ccc;
     }
 }
-.red-color{
+
+.absolute-div {
+    position: absolute;
+}
+
+.arrow {
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        position: relative;
+    }
+    a.nav-link.active:before {
+        content: "";
+        position: absolute;
+        bottom: -16px;
+        left: 40%;
+        border: 10px;
+        width: 0px;
+        height: 0px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #e0dad1;
+    }
+}
+
+.red-color {
     color: red;
 }

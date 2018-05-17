@@ -1,4 +1,3 @@
-@import url(../../bower_components/angular-bootstrap/ui-bootstrap-csp.css);
 @import url(../../bower_components/swiper/dist/css/swiper.css);
 @import url(../../bower_components/swiper/dist/css/swiper.min.css);
 body.compensate-for-scrollbar {
@@ -8566,7 +8565,7 @@ a.text-dark:hover, a.text-dark:focus {
   src: url(../fonts/Poppins/Poppins-SemiBold.ttf); }
 
 body {
-  padding-top: 70px;
+  padding-top: 60px;
   font-family: OpenSans-Regular;
   font-size: 14px; }
 
@@ -8652,13 +8651,13 @@ h6 {
   background: #000; }
 
 .bg-dashboard {
-  background: #EEE8AA; }
+  background: rgba(186, 171, 147, 0.38); }
 
-.bg-engine {
-  background: #000; }
+.background-gray {
+  background-color: #eceeef; }
 
-.bg-Management {
-  background: #000; }
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.7); }
 
 .input-lg,
 .input-group-lg > .form-control,
@@ -8747,7 +8746,6 @@ header {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -8874,29 +8872,26 @@ header .navbar-light .navbar-nav .nav-link:focus {
 .sub-title {
   font-family: Poppins-Regular; }
 
-.home-swiper .swiper-slide {
+.home-banner {
+  background-image: url("/img/home/bg.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100% !important;
-  height: 500px; }
-
-.home-swiper .slider .slider-content .slider-content-inner {
-  display: table-cell;
+  height: 500px;
   vertical-align: middle; }
-
-.home-swiper .slider-title {
-  font-size: 72px;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-  text-shadow: 0 0 75px rgba(0, 0, 0, 0.1);
-  font-family: Poppins-bold; }
-
-.home-swiper .slider .slider-content .slider-description {
-  color: #E5E4E6;
-  padding: 0;
-  font-weight: 500;
-  font-size: 22px; }
+  .home-banner .banner-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    text-shadow: 0 0 75px rgba(0, 0, 0, 0.1);
+    font-family: Poppins-bold; }
+  .home-banner .banner-content .banner-description {
+    color: #E5E4E6;
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px; }
 
 .icon-box-hexagon .icon-box-icon {
   width: 100px;
@@ -8977,6 +8972,12 @@ header .navbar-light .navbar-nav .nav-link:focus {
   display: table-cell;
   vertical-align: middle; }
 
+.alternate-content p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical; }
+
 .alternate-one {
   background: rgba(186, 171, 147, 0.38); }
 
@@ -8986,20 +8987,18 @@ header .navbar-light .navbar-nav .nav-link:focus {
 .entry-title {
   font-family: Poppins-Regular; }
 
-.contact-sec span {
-  color: red; }
-
 .contact-sec label {
   font-family: OpenSans-SemiBold; }
 
 .why-isee-border {
+  padding: 20px;
   border: 2px solid;
   border-radius: 50px; }
 
 .nav-pills {
   padding-bottom: 1rem; }
-  .nav-pills li {
-    padding: 0.5rem 6.9rem; }
+  .nav-pills a {
+    padding: 0.5rem 7.99rem; }
 
 .close-modal {
   position: absolute;
@@ -9009,6 +9008,28 @@ header .navbar-light .navbar-nav .nav-link:focus {
   .close-modal .fa {
     font-size: 20px;
     color: #ccc; }
+
+.absolute-div {
+  position: absolute; }
+
+.arrow .nav-pills .nav-link.active,
+.arrow .nav-pills .show > .nav-link {
+  position: relative; }
+
+.arrow a.nav-link.active:before {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 40%;
+  border: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #e0dad1; }
+
+.red-color {
+  color: red; }
 
 #fancybox-loading,
 .fancybox-close,
@@ -9068,7 +9089,7 @@ header .navbar-light .navbar-nav .nav-link:focus {
     height: 150px;
     top: 35px; }
   .nav-pills li {
-    padding: 0.5rem 2rem; } }
+    padding: 0.5rem 0 !important; } }
 
 /* Breakpoint for medium viewport */
 /* Breakpoint for medium viewport */
@@ -9078,9 +9099,13 @@ header .navbar-light .navbar-nav .nav-link:focus {
   footer .float-right {
     float: none !important; }
   .why-isee-border p {
-    padding: 2rem; }
+    padding: 0; }
+  .slider-content-inner {
+    padding: 0 !important; }
   figure {
     margin: 2rem 0px 1rem; }
+  .home-swiper .slider-title {
+    font-size: 50px; }
   .team-member.team-bubble .team-member-thumbnail .team-member-thumbnail-inner {
     width: 120px;
     height: 120px;

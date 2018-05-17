@@ -2,6 +2,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     $scope.template = TemplateService.getHTML("content/home/home.html");
     TemplateService.title = "Home"; // This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
+    $('[data-toggle="tooltip"]').tooltip();
     $timeout(function () {
         var swiper = new Swiper('.swiper-container', {
             navigation: {
@@ -12,7 +13,8 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         });
     }, 100);
     $scope.homeSlide = [
-        "img/home/1.jpg"
+        "img/home/bg.jpg",
+
 
     ];
     $scope.changeURL = function (id) {
@@ -24,7 +26,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     $scope.fourblock = [{
         img: "img/home/Isee_reduce.svg",
         title: "REDUCE",
-        text: "machine learning and self-learning capabilities allows retailer to easily identify ORC patterns and build simulations and drill down active data sets to pin point potentially fraudulent returns and identify high risk customers, employees and build a cohesive loss prevention strategy."
+        text: "iSee&trade; machine learning and self-learning capabilities allows retailer to easily identify ORC patterns and build simulations and drill down active data sets to pin point potentially fraudulent returns and identify high risk customers, employees and build a cohesive loss prevention strategy."
     }, {
         img: "img/home/Isee_restrict.svg",
         title: "Restrict",
@@ -32,17 +34,17 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     }, {
         img: "img/home/Isee_revamp.svg",
         title: "React",
-        text: "iSeeTM analytics accentuates decision making by bringing clarity to complex business use cases BY PRESENTING ENHANCED DATA VISUALIZATIONS and build a robust fraud prevention strategy around it.In built case management system works in sync with rules engine and provides end to end fraud prevention solution."
+        text: "iSee&trade; analytics accentuates decision making by bringing clarity to complex business use cases BY PRESENTING ENHANCED DATA VISUALIZATIONS and build a robust fraud prevention strategy around it.In built case management system works in sync with rules engine and provides end to end fraud prevention solution."
     }]
 
 
 
     $scope.parameterModal = [{
         id: '0',
-        text: "ISEE TM machine learning and self-learning capabilities allows retailer to easily identify ORC patterns and build simulations and drill down active data sets to pin point potentially fraudulent returns and identify high risk customers, employees and build a cohesive loss prevention strategy."
+        text: "iSee&trade; machine learning and self-learning capabilities allows retailer to easily identify ORC patterns and build simulations and drill down active data sets to pin point potentially fraudulent returns and identify high risk customers, employees and build a cohesive loss prevention strategy."
     }, {
         id: '1',
-        text: "ISEE TM Rules engine allows retailers to easily add and implement rules to prevent and restrict fraudulent returns. Easy to configure out of the box rules &amp; reports lets users leverage its adaptive functionality and design and build rules repository which can easily adapt to tackle new ORC scenarios and use cases. Machine &amp; Natural Language query and real-time reporting tool allows users to design complex scenarios with ease.",
+        text: "iSee&trade; Rules engine allows retailers to easily add and implement rules to prevent and restrict fraudulent returns. Easy to configure out of the box rules &amp; reports lets users leverage its adaptive functionality and design and build rules repository which can easily adapt to tackle new ORC scenarios and use cases. Machine &amp; Natural Language query and real-time reporting tool allows users to design complex scenarios with ease.",
         list: [
             "Visually configure rules using various parameters provided by the system",
             "Can configure complex rules",

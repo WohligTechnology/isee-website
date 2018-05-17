@@ -3,8 +3,8 @@
         <i class=" fa fa-times-circle " aria-hidden="true "></i>
     </div>
     <div class="parameter p-4">
-        <p>
-            {{text.text}}
+        <p ng-bind-html="text.text">
+
         </p>
         <div ng-if="text.list">
             <ul>

@@ -1,28 +1,30 @@
 <!-- //home slider section -->
-<section id="home-slider">
-    <div class="home-swiper">
-        <div class="swiper-slide" style="background-image:url({{s}})" ng-repeat="s in homeSlide track by $index">
-            <div class="slider-content-inner text-left w-100 px-5 mx-3 white-color">
-                <h1 class="slider-title mb-2">Retail Fraud Prevention</h1>
+<section id="home-slider" class="d-table">
+    <div class="home-banner d-table-cell">
+        <div class="banner-content float-right w-50 p-5 mx-3 white-color bg-overlay">
+            <h1 class="banner-title mb-2">iSee Fraud Prevention</h1>
+            <p class="banner-description">An Intelligence Driven Return Fraud Prevent Ion Strategy Can Deliver Efficiencies And Savings by Prioritizing
+                the Most Pressing Risks, Merging Data Sets and Tools And Minimizing Standalone Product Implementations The
+                Isee Tm Solution Framework Is Channel Agnostic (Pos E-commerce) and Enables Organizations to Analyze, Predict
+                and Take Preventive Action to Track and Reduce Return Frauds.</p>
 
-                <p class="slider-description">An Intelligence Driven Return Fraud Prevent Ion Strategy Can Deliver Efficiencies And Savings by Prioritizing
-                    the Most Pressing Risks, Merging Data Sets and Tools And Minimizing Standalone Product Implementations
-                    The Isee Tm Solution Framework Is Channel Agnostic (Pos E-commerce) and Enables Organizations to Analyze,
-                    Predict and Take Preventive Action to Track and Reduce Return Frauds.</p>
-
-                <a class="btn btn-default btn-rounded btn-medium btn-primary" ng-click="modalShow()"> Know More </a>
-            </div>
+            <a class="btn btn-default btn-rounded btn-medium btn-primary" ng-click="modalShow()"> Get In Touch </a>
         </div>
     </div>
 </section>
-<!-- //home slider section -->
-
+<!-- //home slider section 
+-->
+<!-- <div class="home-banner">
+    <div class="float-right">
+        <p>sasasxadsafdasf</p>
+    </div>
+</div> -->
 <!-- //home unknown section -->
 <section id="unknow-section">
     <div class="py-5 alternate-one">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 " ng-repeat="s in fourblock track by $index">
+                <div class="col-lg-4 col-md-4 col-sm-12  px-5" ng-repeat="s in fourblock track by $index">
                     <div class="icon-box icon-box-center icon-box-hexagon">
                         <div class="icon-box-icon">
                             <div class="icon-box-icon-container">
@@ -34,14 +36,13 @@
                     </div>
                     <div class="text-center alternate-content">
                         <h5 class="py-3 m-0 Poppins-Regular text-uppercase">{{s.title}}</h5>
-                        <p>{{s.text}}</p>
+                        <p class="text-justify" ng-bind-html="s.text"></p>
                         <a role="button" class="text-uppercase border-bottom border-dark" ng-click="modalOpen($index)">Know More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 <!-- //home unknown section -->
 <!-- //home About Us section -->
@@ -71,6 +72,95 @@
 
 </section> -->
 <!-- //home About Us section -->
+
+
+<!-- //home Latest News section -->
+<!-- //home three div section -->
+<section id="three div ">
+    <div class="py-5 alternate-bg">
+        <div class="container">
+            <uib-tabset active="activePill" vertical="true" type="pills" class="arrow">
+                <uib-tab index="0" heading="Analytical Dashboard">
+
+                    <div class="py-4 text-center bg-dashboard mb-3">
+                        <h3>Analytical Dashboard</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="img/home/3.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                            <p class="text-capitalize">iSee&trade; Dashboard Accentuates Decision Making by Bringing Clarity to Complex Business Use
+                                Cases by Presenting Enhanced Data Visualizations. Responsive Analytics Layer Allows for Easy
+                                Replication of Real-time Use Cases
+                            </p>
+                            <ul>
+                                <li>Retail Analytics Dashboard</li>
+                                <li>Value added analysis for profitability , YoY analysis</li>
+                                <li>Web and Mobile Enabled</li>
+                                <li>multi-dimensional DATA analysis</li>
+                                <li>Machine learning for self-learning rules</li>
+                                <li>Handle both structured and un- structured data from various sources</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </uib-tab>
+                <uib-tab index="1" heading="Rules Engine">
+                    <div class="py-4 text-center bg-dashboard mb-3">
+                        <h3>Rules Engine</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                            <p class="text-capitalize">Easy to configure out of the box rules &amp; reports lets users leverage its adaptive functionality
+                                and design and build rules repository which can easily adapt to tackle new ORC scenarios
+                                and use cases. Machine &amp; Natural Language query and real-time reporting tool allows users
+                                to design complex scenarios with ease.
+                            </p>
+                            <ul>
+                                <li>Visually configure rules using various parameters provided by the system</li>
+                                <li>Can configure complex rules</li>
+                                <li>Web and Mobile Enabled</li>
+                                <li>Designed for Scale (option for both On-Premise and Cloud)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </uib-tab>
+                <uib-tab index="2" heading="Case Management">
+                    <div class="py-4 text-center bg-dashboard mb-3">
+                        <h3>Case Management</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
+                            <p>iSee&trade; dashboard accentuates decision making by bringing clarity to complex business use
+                                cases BY PRESENTING ENHANCED DATA VISUALIZATIONS. Responsive Analytics layer allows for easy
+                                replication of real-time use cases
+                            </p>
+                            <ul>
+                                <li>Retail Analytics Dashboard</li>
+                                <li>Value added analysis for profitability , YoY analysis</li>
+                                <li>Web and Mobile Enabled</li>
+                                <li>multi-dimensional DATA analysis</li>
+                                <li>Machine learning for self-learning rules</li>
+                                <li>Handle both structured and un- structured data from various sources</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </uib-tab>
+            </uib-tabset>
+        </div>
+    </div>
+</section>
+<!-- //home three div section -->
 <!-- //home Why Isee section -->
 <section id="why-isee">
     <div class="py-5 alternate-one">
@@ -110,96 +200,8 @@
 
 </section>
 <!-- //home Why Isee section -->
-
-<!-- //home Latest News section -->
-<!-- //home three div section -->
-<section id="three div ">
-    <div class="py-5 alternate-bg">
-        <div class="container">
-            <uib-tabset active="activePill" vertical="true" type="pills">
-                <uib-tab index="0" heading="Analytical Dashboard">
-                    <div class="py-4 text-center bg-dashboard">
-                        <h3>Analytical Dashboard</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
-                            <p class="text-capitalize">iSee&trade; Dashboard Accentuates Decision Making by Bringing Clarity to Complex Business Use
-                                Cases by Presenting Enhanced Data Visualizations. Responsive Analytics Layer Allows for Easy
-                                Replication of Real-time Use Cases</p>
-                            <ul>
-                                <li>Retail Analytics Dashboard</li>
-                                <li>Value added analysis for profitability , YoY analysis</li>
-                                <li>Web and Mobile Enabled</li>
-                                <li>multi-dimensional DATA analysis</li>
-                                <li>Machine learning for self-learning rules</li>
-                                <li>Handle both structured and un- structured data from various sources</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </uib-tab>
-                <uib-tab index="1" heading="Rules Engine">
-                    <div class="py-4 text-center bg-dashboard">
-                        <h3>Rules Engine</h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
-                            <p class="text-capitalize">Easy to configure out of the box rules &amp; reports lets users leverage its adaptive functionality
-                                and design and build rules repository which can easily adapt to tackle new ORC scenarios
-                                and use cases. Machine &amp; Natural Language query and real-time reporting tool allows users
-                                to design complex scenarios with ease.
-                            </p>
-                            <ul>
-                                <li>Visually configure rules using various parameters provided by the system</li>
-                                <li>Can configure complex rules</li>
-                                <li>Web and Mobile Enabled</li>
-                                <li>Designed for Scale (option for both On-Premise and Cloud)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </uib-tab>
-                <uib-tab index="2" heading="Case Management ">
-                    <div class="py-4 text-center bg-dashboard">
-                        <h3>Case Management</h3>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 pt-5">
-                            <p>iSee&trade; dashboard accentuates decision making by bringing clarity to complex business use
-                                cases BY PRESENTING ENHANCED DATA VISUALIZATIONS. Responsive Analytics layer allows for easy
-                                replication of real-time use cases
-                            </p>
-                            <ul>
-                                <li>Retail Analytics Dashboard</li>
-                                <li>Value added analysis for profitability , YoY analysis</li>
-                                <li>Web and Mobile Enabled</li>
-                                <li>multi-dimensional DATA analysis</li>
-                                <li>Machine learning for self-learning rules</li>
-                                <li>Handle both structured and un- structured data from various sources</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </uib-tab>
-            </uib-tabset>
-        </div>
-    </div>
-
-
-</section>
-<!-- //home three div section -->
 <section id="latest-news">
-    <div class="py-5 alternate-one">
+    <div class="py-5 ">
         <div class="container">
             <div class="latest-news">
                 <div class="title title-default text-center">
@@ -209,7 +211,7 @@
                 <div class="row">
                     <div class="col">
                         <figure class="entry-thumbnail">
-                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">                            </figure>
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid"> </figure>
                         <h4 class="entry-title py-2 m-0 text-capitalize text-center">iSee Advantage</h4>
                         <!-- <p class="py-2">by TG-Demo Team </p> -->
                         <ul>
@@ -224,7 +226,7 @@
                     </div>
                     <div class="col">
                         <figure class="entry-thumbnail">
-                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">                            </figure>
+                            <img src="img/home/1.png" class="img-fluid"> </figure>
                         <h4 class="entry-title text-center py-2 m-0 text-capitalize">iSee Dashboard</h4>
                         <!-- <p class="py-2">by TG-Demo Team </p> -->
                         <ul>
@@ -241,7 +243,7 @@
                     </div>
                     <div class="col">
                         <figure class="entry-thumbnail">
-                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid">                            </figure>
+                            <img src="https://demo.themegrill.com/suffice/wp-content/uploads/sites/146/2017/06/bake-cake-750x420.jpg" class="img-fluid"> </figure>
                         <h4 class="entry-title py-2 m-0 text-capitalize text-center">Key Offerings</h4>
                         <!-- <p class="py-2">by TG-Demo Team </p> -->
                         <ul>
@@ -412,29 +414,72 @@
                                 <div class="conatct-forms">
                                     <form>
                                         <div class="row align-items-center form-group">
-                                            <div class="col-3 text-right"><label for="company">Company Name <span class="red-color">*</span> : </label></div>
-                                            <div class="col-9"><input type="company" class="form-control" id="company" placeholder="Enter Company Name" name="company" required></div>
-                                        </div>
-                                        <div class="row align-items-center form-group">
-                                            <div class="col-3 text-right"><label for="email">Email <span class="red-color">*</span> : </label></div>
-                                            <div class="col-9"><input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required></div>
-                                        </div>
-                                        <div class="row align-items-center form-group">
-                                            <div class="col-3 text-right"><label for="phone">Phone : </label></div>
-                                            <div class="col-9"><input type="tel" class="form-control" id="phone" placeholder="Enter Phone" name="phone"></div>
-                                        </div>
-                                        <div class="row align-items-center form-group">
-                                            <div class="col-3 text-right"><label for="timetoreach">Best Time to Reach You : </label></div>
-                                            <div class="col-9"><input type="text" class="form-control" id="timetoreach" placeholder="Enter Time To Reach You" name="timetoreach"></div>
-                                        </div>
-                                        <div class="row align-items-center form-group">
-                                            <div class="col-3 text-right"><label for="timetoreach">Revenue : </label></div>
-                                            <div class="col-9 text-left"><span class="pr-3"><input type="checkbox" name="fifhun" value="fifhun">50 – 100 Million USD</span><span class="pr-3"><input type="checkbox" name="hunfif" value="hunfif">100 – 500 Million USD</span><span class="pr-3"><input type="checkbox" name="fivbil" value="fivbil">500 – 1Billion USD</span><span class="pr-3"><input type="checkbox" name="oneb" value="oneb">1B +</span></div>
-                                        </div>
-                                        <div class="row align-items-center form-group">
-                                                <div class="col-3 text-right"><label for="timetoreach">Estimated Loss Due to ORC : </label></div>
-                                                <div class="col-9 text-left"><span class="pr-3"><input type="checkbox" name="lesfive" value="lesfive">&lt; 5 Million USD</span><span class="pr-3"><input type="checkbox" name="lesten" value="lesten">&lt; 10 Million USD</span><span class="pr-3"><input type="checkbox" name="lestwen" value="lestwen">&lt; 20 Million USD</span><span class="pr-3"><input type="checkbox" name="lesfifty" value="lesfifty">&lt; 50 Million USD</span><span class="pr-3"><br><input type="checkbox" name="other" value="other">&lt; Other</span></div>
+                                            <div class="col-3 text-right">
+                                                <label for="company">Company Name
+                                                    <span class="red-color">*</span> : </label>
                                             </div>
+                                            <div class="col-9">
+                                                <input type="company" class="form-control" id="company" placeholder="Enter Company Name" name="company" required>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center form-group">
+                                            <div class="col-3 text-right">
+                                                <label for="email">Email
+                                                    <span class="red-color">*</span> : </label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center form-group">
+                                            <div class="col-3 text-right">
+                                                <label for="phone">Phone : </label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="tel" class="form-control" id="phone" placeholder="Enter Phone" name="phone">
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center form-group">
+                                            <div class="col-3 text-right">
+                                                <label for="timetoreach">Best Time to Reach You : </label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" id="timetoreach" placeholder="Enter Time To Reach You" name="timetoreach">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="row align-items-center form-group">
+                                            <div class="col-3 text-right">
+                                                <label for="timetoreach">Revenue : </label>
+                                            </div>
+                                            <div class="col-9 text-left">
+                                                <span class="pr-3">
+                                                    <input type="checkbox" name="fifhun" value="fifhun">50 – 100 Million USD</span>
+                                                <span class="pr-3">
+                                                    <input type="checkbox" name="hunfif" value="hunfif">100 – 500 Million USD</span>
+                                                <span class="pr-3">
+                                                    <input type="checkbox" name="fivbil" value="fivbil">500 – 1Billion USD</span>
+                                                <span class="pr-3">
+                                                    <input type="checkbox" name="oneb" value="oneb">1B +</span>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="row align-items-center form-group">
+                                            <div class="col-3 text-right">
+                                                <label for="timetoreach">Estimated Loss Due to ORC : </label>
+                                            </div>
+                                            <div class="col-9 text-left">
+                                                <span class="pr-3">
+                                                    <input type="checkbox" name="lesfive" value="lesfive">&lt; 5 Million USD</span>
+                                                <span class="pr-3">
+                                                    <input type="checkbox" name="lesten" value="lesten">&lt; 10 Million USD</span>
+                                                <span class="pr-3">
+                                                    <input type="checkbox" name="lestwen" value="lestwen">&lt; 20 Million USD</span>
+                                                <span class="pr-3">
+                                                    <input type="checkbox" name="lesfifty" value="lesfifty">&lt; 50 Million USD</span>
+                                                <span class="pr-3">
+                                                    <br>
+                                                    <input type="checkbox" name="other" value="other">&lt; Other</span>
+                                            </div>
+                                        </div> -->
                                         <button type="submit" class="btn btn-primary float-right">Submit</button>
                                     </form>
                                 </div>
