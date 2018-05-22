@@ -1,29 +1,75 @@
-<div class="text-center p-3 background-gray">
+<div class="text-center p-5 background-gray  position-relative">
+    <div class="close-modal" ng-click="$dismiss()">
+        <i class=" fa fa-times-circle " aria-hidden="true "></i>
+    </div>
     <form>
         <div class="row align-items-center form-group">
-            <div class="col-3 text-right"><label for="company">Company Name <span class="red-color">*</span> : </label></div>
-            <div class="col-9"><input type="company" class="form-control" id="company" placeholder="Enter Company Name" name="company" required></div>
-        </div>
-        <div class="row align-items-center form-group">
-            <div class="col-3 text-right"><label for="email">Email <span class="red-color">*</span> : </label></div>
-            <div class="col-9"><input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required></div>
-        </div>
-        <div class="row align-items-center form-group">
-            <div class="col-3 text-right"><label for="phone">Phone : </label></div>
-            <div class="col-9"><input type="tel" class="form-control" id="phone" placeholder="Enter Phone" name="phone"></div>
-        </div>
-        <div class="row align-items-center form-group">
-            <div class="col-3 text-right"><label for="timetoreach">Best Time to Reach You : </label></div>
-            <div class="col-9"><input type="text" class="form-control" id="timetoreach" placeholder="Enter Time To Reach You" name="timetoreach"></div>
-        </div>
-        <div class="row align-items-center form-group">
-            <div class="col-3 text-right"><label for="timetoreach">Revenue : </label></div>
-            <div class="col-9 text-left"><span class="pr-3"><input type="checkbox" name="fifhun" value="fifhun">50 – 100 Million USD</span><span class="pr-3"><input type="checkbox" name="hunfif" value="hunfif">100 – 500 Million USD</span><span class="pr-3"><input type="checkbox" name="fivbil" value="fivbil">500 – 1Billion USD</span><span class="pr-3"><input type="checkbox" name="oneb" value="oneb">1B +</span></div>
-        </div>
-        <div class="row align-items-center form-group">
-                <div class="col-3 text-right"><label for="timetoreach">Estimated Loss Due to ORC : </label></div>
-                <div class="col-9 text-left"><span class="pr-3"><input type="checkbox" name="lesfive" value="lesfive">&lt; 5 Million USD</span><span class="pr-3"><input type="checkbox" name="lesten" value="lesten">&lt; 10 Million USD</span><span class="pr-3"><input type="checkbox" name="lestwen" value="lestwen">&lt; 20 Million USD</span><span class="pr-3"><input type="checkbox" name="lesfifty" value="lesfifty">&lt; 50 Million USD</span><span class="pr-3"><br><input type="checkbox" name="other" value="other">&lt; Other</span></div>
+            <div class="col-3 text-right">
+                <label for="company">Company Name
+                    <span class="red-color">*</span> : </label>
             </div>
+            <div class="col-9">
+                <input type="company" class="form-control" id="company" placeholder="Enter Company Name" name="company" required>
+            </div>
+        </div>
+        <div class="row align-items-center form-group">
+            <div class="col-3 text-right">
+                <label for="email">Email
+                    <span class="red-color">*</span> : </label>
+            </div>
+            <div class="col-9">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+        </div>
+        <div class="row align-items-center form-group">
+            <div class="col-3 text-right">
+                <label for="phone">Phone : </label>
+            </div>
+            <div class="col-9">
+                <input type="tel" class="form-control" id="phone" placeholder="Enter Phone" name="phone">
+            </div>
+        </div>
+        <div class="row align-items-center form-group">
+            <div class="col-3 text-right">
+                <label for="timetoreach">Best Time to Reach You : </label>
+            </div>
+            <div class="col-9">
+                <input type="text" class="form-control" id="timetoreach" placeholder="Enter Time To Reach You" name="timetoreach">
+            </div>
+        </div>
+        <div class="row align-items-center form-group">
+            <div class="col-3 text-right">
+                <label for="timetoreach">Revenue : </label>
+            </div>
+            <div class="col-9 text-left">
+                <span class="pr-3">
+                    <input type="checkbox" name="fifhun" value="fifhun">50 – 100 Million USD</span>
+                <span class="pr-3">
+                    <input type="checkbox" name="hunfif" value="hunfif">100 – 500 Million USD</span>
+                <span class="pr-3">
+                    <input type="checkbox" name="fivbil" value="fivbil">500 – 1Billion USD</span>
+                <span class="pr-3">
+                    <input type="checkbox" name="oneb" value="oneb">1B +</span>
+            </div>
+        </div>
+        <div class="row align-items-center form-group">
+            <div class="col-3 text-right">
+                <label for="timetoreach">Estimated Loss Due to ORC : </label>
+            </div>
+            <div class="col-9 text-left">
+                <span class="pr-3">
+                    <input type="checkbox" name="lesfive" value="lesfive">&lt; 5 Million USD</span>
+                <span class="pr-3">
+                    <input type="checkbox" name="lesten" value="lesten">&lt; 10 Million USD</span>
+                <span class="pr-3">
+                    <input type="checkbox" name="lestwen" value="lestwen">&lt; 20 Million USD</span>
+                <span class="pr-3">
+                    <input type="checkbox" name="lesfifty" value="lesfifty">&lt; 50 Million USD</span>
+                <span class="pr-3">
+                    <br>
+                    <input type="checkbox" name="other" value="other">&lt; Other</span>
+            </div>
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
